@@ -1,0 +1,20 @@
+<html>
+<head><title>:: วรพงศ์ อยู่ประจำ ::</title>
+</head>
+<body bgcolor=#06402B>
+<center>
+<h3><u>ประวัติส่วนตัว</u></h3>
+<img src = images/man-icon.png>
+<hr width = 700>
+<b>ประวัติการศึกษา</b> <br><br>
+<table width = 700 border = 1>
+  <tr>
+    	<td align = center bgcolor = #cccccc><b>ระดับ</b></td>
+    	<td align = center bgcolor = #cccccc><b>สถานศึกษา</b></td> 
+    	<td align = center bgcolor = #cccccc><b>ปีที่จบการศึกษา</b></td>
+  </tr>
+</center>
+</table>
+<br>
+</body>
+</html>

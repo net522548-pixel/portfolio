@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* ----------- ฟอนต์และโทนสี ----------- */
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap');
+
+        :root {
+            --bg: #f4f1ed;         /* ครีมอ่อน */
+            --primary: #8e735b;    /* น้ำตาลอ่อน */
+            --accent: #d6bfae;     /* เบจ */
+            --text: #333;          /* เทาเข้ม */
+            --light-text: #777;    /* เทาอ่อน */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Prompt', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* ----------- Header ----------- */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* ----------- Section ----------- */
+        section {
+            padding: 4rem 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        /* ----------- About ----------- */
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about img {
+            width: 200px;
+            border-radius: 100%;
+            margin-bottom: 1rem;
+        }
+
+        /* ----------- Portfolio ----------- */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .portfolio-item h3 {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* ----------- Contact ----------- */
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary);
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ส่วนหัวเว็บ -->
+    <header>
+        <h1>ชื่อของคุณ</h1>
+        <p>Creative Artist / Illustrator / Visual Designer</p>
+
+        <!-- เมนู -->
+        <nav>
+            <a href="#about">เกี่ยวกับฉัน</a>
+            <a href="#portfolio">ผลงาน</a>
+            <a href="#contact">ติดต่อ</a>
+        </nav>
+    </header>
+
+    <!-- Section: About -->
+    <section id="about">
+        <h2 class="section-title">เกี่ยวกับฉัน</h2>
+        <div class="about">
+            <!-- ⬇⬇⬇ เปลี่ยน URL รูปโปรไฟล์ตรงนี้ ⬇⬇⬇ -->
+            <img src="your-profile.jpg" alt="รูปโปรไฟล์">
+
+            <!-- ⬇⬇⬇ ใส่ข้อความแนะนำตัวตรงนี้ ⬇⬇⬇ -->
+            <p>
+                สวัสดีค่ะ ฉันชื่อ [ชื่อของคุณ] เป็นศิลปินสาย Art & Cinematic ที่ชอบถ่ายทอดอารมณ์ผ่านภาพวาด 
+                และการจัดองค์ประกอบอย่างเรียบง่ายแต่ลึกซึ้ง ผลงานของฉันได้รับแรงบันดาลใจจากธรรมชาติ ความรู้สึก 
+                และความเงียบสงบของชีวิต
+            </p>
+        </div>
+    </section>
+
+    <!-- Section: Portfolio -->
+    <section id="portfolio">
+        <h2 class="section-title">ผลงาน</h2>
+        <div class="portfolio-grid">
+            
+            <!-- ⬇⬇⬇ เพิ่มผลงานโดยการคัดลอก block ด้านล่างนี้ ⬇⬇⬇ -->
+            <div class="portfolio-item">
+                <img src="your-artwork1.jpg" alt="ชื่อผลงาน">
+                <h3>ชื่อผลงาน</h3>
+                <p>คำอธิบายสั้น ๆ เกี่ยวกับผลงาน หรือแรงบันดาลใจ</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="your-artwork2.jpg" alt="ชื่อผลงาน">
+                <h3>ชื่อผลงาน</h3>
+                <p>รายละเอียดหรือเทคนิคที่ใช้ เช่น watercolor, digital painting ฯลฯ</p>
+            </div>
+            <!-- ⬆⬆⬆ เพิ่มหรือคัดลอกเพิ่มได้ตามจำนวนผลงาน ⬆⬆⬆ -->
+        </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact">
+        <h2 class="section-title">ติดต่อ</h2>
+        <div class="contact">
+            <!-- ⬇⬇⬇ แก้ไขช่องทางติดต่อได้ตามต้องการ ⬇⬇⬇ -->
+            <p>อีเมล: yourname@email.com</p>
+            <p>Instagram: @yourhandle</p>
+            <p>Behance / Artstation / Portfolio link</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 ชื่อของคุณ | All rights reserved.
+    </footer>
+
+</body>
+</html>
